@@ -1,16 +1,57 @@
+* {
+    box-sizing: border-box;
+}
 
+.main, .movearound, .movearound2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+/*.movearound {*/
+/*    float: left;*/
+/*    width: 33.33%;*/
+/*    padding: 5px;*/
+/*    border: 1px solid black;*/
+/*}*/
+/*.movearound2 {*/
+/*    float: left;*/
+/*    width: 33.33%;*/
+/*    padding: 5px;*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.pie{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    padding: 55px 50px;
+    clear: both;
+
+}
+footer{
+    width: 100%;
+    position: relative;
+    height: auto;
+}
 
 /* --- smartphones --   */
 @media only screen and (max-width: 600px) {
     body {
         background-color: red;
+        font-size: 20px;
     [ class *= "container" ] width: 100 %;
         text-align: center;
     }
-    div#medium, div#large {
+    div#medium, div#large, h1#large, h1#medium {
         display: none;
     }
-    font-size: 30px;
+.main, .movearound, .movearound2{
+    width: 100%;
+}
 
 }
 
@@ -20,8 +61,14 @@
         background-color: green;
         font-size: 40px;
     }
-    div#small, div#large {
+    div#small, div#large, h1#small, h1#large {
         display: none;
+    }
+    .main, .movearound {
+        width: 50%;
+    }
+    .movearound2{
+        width: 100%;
     }
 }
 
@@ -31,10 +78,13 @@
         background-color: blue;
         font-size: 50px;
     }
-    div#large {
+    div#large, h1#large {
         display: inline;
     }
-    div#medium, div#small {
+    div#medium, div#small, h1#small, h1#medium {
         display: none;
+    }
+    .main, .movearound, .movearound2{
+        width: 33.33%;
     }
 }
