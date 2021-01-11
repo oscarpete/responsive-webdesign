@@ -1,0 +1,23 @@
+/* --- smartphones --   */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    [ class *= "container" ] width: 100 %;
+        text-align: center;
+    }
+
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* For desktops: */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+}
